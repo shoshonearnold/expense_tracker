@@ -10,6 +10,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <GlobalProvider>
       <Header />
        <div className="container">
         <Balance />
@@ -17,7 +18,7 @@ function App() {
         <TransactionList />
         <AddTransaction />
        </div>
-       <GlobalProvider />
+       </GlobalProvider>
     </div>
   );
 }
